@@ -20,11 +20,6 @@ RideNow is a simple web-based vehicle rental system. It allows users to view veh
 - JavaScript
 - Local Storage
 
- How to Run
-
-1. Open the project in VS Code.
-2. Open `index.html` in a browser.
-3. Use the navigation bar to access the different pages.
 
  Project Pages
 
