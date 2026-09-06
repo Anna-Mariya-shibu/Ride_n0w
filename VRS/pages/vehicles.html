@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vehicles - RideNow</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="brand">
+            <img src="../assets/images/logo.png" alt="RideNow Logo">
+            <span>RideNow</span>
+        </div>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="bookings.html">My Bookings</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+    </header>
+
+
+    <main class="section">
+
+        <h1>Available Vehicles</h1>
+
+        <p class="muted">
+            Choose a vehicle and rental plan.
+        </p>
+
+
+        <div class="filters">
+
+            <input
+                id="search"
+                type="text"
+                placeholder="Search vehicle..."
+            >
+
+            <select id="type">
+
+                <option value="all">
+                    All Types
+                </option>
+
+                <option value="2W">
+                    Two Wheeler
+                </option>
+
+                <option value="4W">
+                    Four Wheeler
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div
+            id="vehicleList"
+            class="vehicle-grid"
+        ></div>
+
+    </main>
+
+
+    <footer>
+        © 2026 RideNow Vehicle Rental System
+    </footer>
+
+
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>

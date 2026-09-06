@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Vehicle - RideNow</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="brand">
+            <img src="../assets/images/logo.png" alt="RideNow Logo">
+            <span>RideNow</span>
+        </div>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="bookings.html">My Bookings</a>
+        </nav>
+
+    </header>
+
+
+    <main class="form-page">
+
+        <div class="form-card">
+
+            <h1>Book Vehicle</h1>
+
+
+            <div id="selectedVehicle" class="selected"></div>
+
+
+            <form id="bookingForm">
+
+                <label>
+                    Your Name
+                    <input
+                        id="customerName"
+                        type="text"
+                        required
+                        placeholder="Enter your name"
+                    >
+                </label>
+
+
+                <label>
+                    Email
+                    <input
+                        id="email"
+                        type="email"
+                        required
+                        placeholder="you@example.com"
+                    >
+                </label>
+
+
+                <label>
+                    Start Date
+                    <input
+                        id="startDate"
+                        type="date"
+                        required
+                    >
+                </label>
+
+
+                <label>
+                    End Date
+                    <input
+                        id="endDate"
+                        type="date"
+                        required
+                    >
+                </label>
+
+
+                <label>
+                    Rental Plan
+
+                    <select id="plan">
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                    </select>
+                </label>
+
+
+                <div id="total" class="total">
+                    Estimated total: ₹0
+                </div>
+
+
+                <button
+                    class="btn primary full"
+                    type="submit"
+                >
+                    Confirm Booking
+                </button>
+
+            </form>
+
+
+            <p id="message"></p>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        © 2026 RideNow Vehicle Rental System
+    </footer>
+
+
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>

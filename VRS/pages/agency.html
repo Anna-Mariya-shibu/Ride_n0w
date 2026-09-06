@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agency Dashboard - RideNow</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="brand">
+            <img src="../assets/images/logo.png" alt="RideNow Logo">
+            <span>RideNow</span>
+        </div>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+
+    </header>
+
+
+    <main class="section">
+
+        <h1>Rental Agency Dashboard</h1>
+
+
+        <div class="stats">
+
+            <div class="stat">
+                <strong id="vehicleCount">0</strong>
+                <span>Vehicles</span>
+            </div>
+
+            <div class="stat">
+                <strong id="bookingCount">0</strong>
+                <span>Bookings</span>
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-grid">
+
+            <div class="form-card">
+
+                <h2>Add Vehicle</h2>
+
+                <form id="vehicleForm">
+
+                    <label>
+                        Vehicle Name
+                        <input
+                            id="vName"
+                            type="text"
+                            required
+                            placeholder="Honda Activa"
+                        >
+                    </label>
+
+
+                    <label>
+                        Type
+
+                        <select id="vType">
+                            <option value="2W">
+                                Two Wheeler
+                            </option>
+
+                            <option value="4W">
+                                Four Wheeler
+                            </option>
+                        </select>
+                    </label>
+
+
+                    <label>
+                        Fuel Type
+
+                        <input
+                            id="vFuel"
+                            type="text"
+                            required
+                            placeholder="Petrol"
+                        >
+                    </label>
+
+
+                    <label>
+                        Daily Price (₹)
+
+                        <input
+                            id="vPrice"
+                            type="number"
+                            required
+                            min="1"
+                            placeholder="500"
+                        >
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="btn primary full"
+                    >
+                        Add Vehicle
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <div class="form-card">
+
+                <h2>Recent Bookings</h2>
+
+                <div id="agencyBookings"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        © 2026 RideNow Vehicle Rental System
+    </footer>
+
+
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
